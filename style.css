@@ -12,9 +12,21 @@ h2 {
   text-align: center;
 }
 
+.redheader{
+  font-size: 30px; 
+  color: #83092e;
+  margin-top:0;
+  }
+
 h3 {
   font-size: 18px;
   font-weight: 500;
+}
+
+h4 {
+  font-size: 20px; 
+  color: #83092e; 
+  text-align: center;
 }
 
 p {
@@ -31,15 +43,20 @@ section.alternate-background {
   color: #ecdbc9;
 }
 
-main img {
-  width: 100px;
+.header-image {
+width:60%;
+height:90%;  
 }
 
 /* ---  Groups & Items --- */
 
 .group {
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
+  flex-direction: row;
+  width: 250px;
+  position: relative;
+  
+  
 }
 
 .item {
@@ -56,14 +73,23 @@ main img {
 header {
   background-color: #83092e;
   padding: 20px 20px 0 20px;
-  text-align: center;
+}
+
+nav {
+float: right;  
+position: relative;
 }
 
 .logo {
   font-family: "Tangerine", cursive;
-  font-size: 72px;
+  font-size: 30px;
   color: #ecdbc9;
+  text-align: left;
+  display: inline-block;
+  position: relative; 
 }
+
+
 
 header nav ul li {
   list-style-type: none;
@@ -80,11 +106,103 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
+.column-flex {
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  justify-content: space-between;
+  }
+  
+  .sub-flex {
+  display: flex;
+  flex-direction: column;  
+  width: auto;
+  }
+
+  #about img {
+  width: 20%;
+  height: auto;
+  margin: 10px;
+  }
+
+  #about p {
+  font-size: 15px;
+  width:50%; 
+  margin: 10 
+  }
+  .about-flex {
+  display: flex; 
+  flex-direction: row;
+  }
+
+ #download img {
+ width: 40%;
+ height: 80;  
+ }
+  .download-flex {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  }
+ .download-sub-flex {
+  display: flex;
+ flex-direction: column;
+ width: 59%;
+ }
+
+ #blog div img {
+  width: 100%;
+  height:100%;;
+  }
+
+  #blog p {
+  width:100%  
+  }
+
+  .blog-flex {
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+    
+  }
+
+  .blog-sub-flex1 {
+  display: flex;
+  flex-direction: column;;
+  width: 50%;
+  margin: 10px;
+  justify-content:space-between;
+  }
+
+
+
+  .blog-sub-flex-row {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    margin: 10px;
+    justify-content:;
+    }
 /* -------  Join Form ------- */
 form {
   border: 2px solid #6b1a22;
   padding: 10px;
+  display: flex;
+  flex-direction:column;
+  margin:auto;
 }
+
+form div{
+display: flex;
+flex-direction:row;
+justify-content: space-between; 
+}
+
+form input {
+position: relative;
+right: 0px;
+}
+
 
 form label {
   font-weight: bold;
@@ -94,6 +212,9 @@ form select,
 form input {
   margin-bottom: 20px;
   width: 180px;
+  position: relative;
+  left: 1px;
+  border: 
 }
 
 form button {
@@ -117,4 +238,156 @@ footer p {
   padding: 20px;
 }
 
+
+
+
+
 /* -------  Media Query ------- */
+@media all and (max-width: 600px) {
+  body {
+    background-color: white;
+  }
+
+  .logo {
+    font-family: "Tangerine", cursive;
+    font-size: 72px;
+    color: #ecdbc9;
+    text-align: center;
+    
+    }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+ main img, .header-image {
+   width: 100%;
+   height: 90%;
+   margin-bottom:10px;
+  
+ }
+
+header {
+text-align: center;  
+}
+
+  header nav ul {
+  font-size: 25px;
+
+  }
+
+  nav {
+    float: none; 
+    display: flex;
+    justify-content: center; 
+    }
+
+  .redheader{
+  font-size: 30px; 
+  color: #83092e; 
+  }
+  
+  .alternative-background{
+   background-color: white; 
+  }
+
+  .column-flex {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  }
+  
+  form {
+    width: 90%;
+    border: 2px solid #6b1a22;
+    padding: 10px;
+    display: flex;
+    flex-direction:column;
+    margin:auto;
+  }
+  
+  form div{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between; 
+  }
+  
+  form input {
+  position: relative;
+  right: 0px;
+  }
+
+  h4 {
+    font-size: 35px; 
+    color: #83092e; 
+    text-align: center;
+  }
+  
+  #about img {
+    width: none;
+    height: none;
+    margin: none;
+    }
+  
+    #about p {
+    font-size: none;
+    width: none;
+    margin: none;
+    }
+    .about-flex {
+    display: none;; 
+    flex-direction: row;
+    }
+  
+    #download img {
+      width: none;
+      height: none;  
+      }
+       .download-flex {
+        display: none;
+        flex-direction: none;
+        justify-content: none;
+       }
+      .download-sub-flex {
+       display: none;
+      flex-direction: none;
+      width: none;
+      }
+
+      #blog div img {
+        width: none;
+        height:none;;
+        }
+      
+        #blog p {
+        width:none  
+        }
+      
+        .blog-flex {
+          display: none;
+          flex-direction:none ;
+          justify-content: none;
+          
+        }
+      
+        .blog-sub-flex1 {
+        display: none;
+        flex-direction: none;
+        width: none;
+        margin: none;
+        justify-content:none;
+        }
+      
+      
+      
+        .blog-sub-flex-row {
+          display: flex;
+          flex-direction: row;
+          width:100%;
+          margin: 10px;
+          justify-content:;
+          }
+
+}

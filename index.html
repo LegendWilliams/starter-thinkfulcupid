@@ -17,11 +17,16 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
+
+
+
+
+  
   <body>
     <header>
       <div class="logo">ThinkfulCupid</div>
       <nav>
-        <ul id="menu">
+        <ul id="menu" class="group">
           <li><a>Join</a></li>
           <li><a>About</a></li>
           <li><a>Download</a></li>
@@ -32,14 +37,43 @@
 
     <main>
       <!-- Join -->
-      <section id="join">
-        <img src="images/love.png" alt="ThinkfulCupid - love" />
+      <section id="join" class="column-flex row-flex;">
+        <img src="images/love.png" class="header-image" alt="ThinkfulCupid - love" />
         <!-- Add join form here -->
+        <div class="subflex"> 
+        <h4 class="red-header"> Find the perfect match </h4>
+        
+        
+        <form>
+          <div>
+            <label> Email </label>
+            <input type="test" id="email" name="email"placeholder="email@example.com">
+          </div>
+          <div>
+          <label> Create a password</label>
+            <input id="password" type="text" name=password minlength="10" placeholder="Enter Your Password">
+          </div>
+          <div>
+            <label for="name"> Username</label>
+            <input type = "text" id="username" name="username" placeholder="Enter Username Here">
+          </div>
+              <div>
+                <label for="gender">I am a</label>
+                <select name="fonts" size="1">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+              <button> Join</button>
+        </form>
+      </div>
       </section>
 
       <!-- About -->
       <section id="about" class="alternate-background">
-        <h2>About</h2>
+      <h2>About</h2>
+      <div class="about-flex">
+        
         <img
           src="images/sunset-with-heart.png"
           alt="ThinkfulCupid - Sunset with heart"
@@ -58,10 +92,13 @@
           tristique vestibulum. In hac habitasse platea dictumst. Vestibulum sit
           amet pretium quam.
         </p>
+      </div>
       </section>
 
       <!-- Download -->
-      <section id="download">
+      <section id="download" class="download-flex">
+        
+      <div class= "download-sub-flex">
         <h2>Download the App</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
@@ -80,14 +117,20 @@
             hendrerit mauris.
           </li>
         </ul>
-
+      </div>
         <img src="images/download.png" alt="Thinkfulbnb - download" />
       </section>
 
       <!-- Blog -->
-      <section id="blog" class="alternate-background">
+      <section id="blog" class="alternate-background" >
         <h2>Blog</h2>
 
+<div class="blog-flex">
+
+  <!-- start of first sub-flex-row -->
+  <div class="blog-sub-flex-row">
+   <!-- start of first subflex column -->
+      <div class="blog-sub-flex1">
         <img src="images/blog-post-1.png" alt="Thinkfulbnb - blog post 1" />
         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
         <p>
@@ -96,7 +139,11 @@
           dolor quam, mattis at nibh sed, tincidunt malesuada turpis. Nam dictum
           dapibus neque, sed vehicula neque tristique vestibulum.
         </p>
+      </div>
+      <!-- end of  first subflex column -->
 
+      <!-- start of second subflex column -->
+      <div class="blog-sub-flex1">
         <img src="images/blog-post-2.png" alt="Thinkfulbnb - blog post 2" />
         <h3>Mauris eget nisl quis metus ultrices venenatis</h3>
         <p>
@@ -105,7 +152,16 @@
           dolor quam, mattis at nibh sed, tincidunt malesuada turpis. Nam dictum
           dapibus neque, sed vehicula neque tristique vestibulum.
         </p>
+      </div>
+      <!-- end of second subflex column -->
+  </div>
+  <!-- end of first subflex row -->
 
+  <!-- start of second subflex row -->
+  <div class="blog-sub-flex-row">
+
+    <!-- start of first subflex column -->
+      <div class="blog-sub-flex1">
         <img src="images/blog-post-3.png" alt="Thinkfulbnb - blog post 3" />
         <h3>
           Fusce augue diam, sollicitudin at metus id, congue placerat neque
@@ -116,15 +172,24 @@
           dolor quam, mattis at nibh sed, tincidunt malesuada turpis. Nam dictum
           dapibus neque, sed vehicula neque tristique vestibulum.
         </p>
+      </div>
+      <!-- end of first subflex column -->
 
-        <img src="images/blog-post-4.png" alt="Thinkfulbnb - blog post 4" />
-        <h3>Aenean purus dui, aliquam vitae auctor vel</h3>
-        <p>
-          Sed vel scelerisque ex. Duis in pharetra neque, at tempus lorem.
-          Aenean mi magna, posuere at quam sed, euismod gravida neque. Phasellus
-          dolor quam, mattis at nibh sed, tincidunt malesuada turpis. Nam dictum
-          dapibus neque, sed vehicula neque tristique vestibulum.
-        </p>
+    <!-- Start of second subflex column -->
+      <div class="blog-sub-flex1" >
+          <img src="images/blog-post-4.png" alt="Thinkfulbnb - blog post 4" />
+          <h3>Aenean purus dui, aliquam vitae auctor vel</h3>
+          <p>
+            Sed vel scelerisque ex. Duis in pharetra neque, at tempus lorem.
+            Aenean mi magna, posuere at quam sed, euismod gravida neque. Phasellus
+            dolor quam, mattis at nibh sed, tincidunt malesuada turpis. Nam dictum
+            dapibus neque, sed vehicula neque tristique vestibulum.
+          </p>
+      </div>
+      <!-- end of second subflex column -->
+  </div>
+</div>
+<!-- end of second row flex -->
       </section>
     </main>
 
