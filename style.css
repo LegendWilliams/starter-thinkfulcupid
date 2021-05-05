@@ -36,6 +36,7 @@ p {
 
 section {
   padding: 20px;
+  width: 100%;
 }
 
 section.alternate-background {
@@ -73,6 +74,7 @@ height:90%;
 header {
   background-color: #83092e;
   padding: 20px 20px 0 20px;
+  width: 100%;
 }
 
 nav {
@@ -228,7 +230,8 @@ form button {
 
 /* -------  Footer ------- */
 
-footer {
+#footer {
+  width: 100%;
   background-color: #83092e;
 }
 
@@ -270,12 +273,12 @@ footer p {
  }
 
 header {
-text-align: center;  
+text-align: center;
+width: 100%;  
 }
 
   header nav ul {
   font-size: 25px;
-
   }
 
   nav {
@@ -296,7 +299,12 @@ text-align: center;
   .column-flex {
   display: flex;
   flex-direction: column;
-  width: auto;
+  justify-content: center;
+  }
+
+  .column-flex img {
+   width:100%;
+   height:90%;
   }
   
   form {
@@ -325,58 +333,72 @@ text-align: center;
     text-align: center;
   }
   
+  #about {
+  width: 100%; 
+
+  }
+
   #about img {
-    width: none;
-    height: none;
+    width:97%;
+    height:90%;
     margin: none;
     }
   
     #about p {
     font-size: none;
-    width: none;
-    margin: none;
+    margin: auto;
+    width:97%;
+    height:90%;
+    text-align: left;
+    
     }
     .about-flex {
-    display: none;; 
-    flex-direction: row;
+    display: flex;; 
+    flex-direction: column;
+    justify-content: center;
+    
     }
   
     #download img {
-      width: none;
-      height: none;  
+      width: 97%;
+      height: 90%;  
       }
        .download-flex {
-        display: none;
-        flex-direction: none;
-        justify-content: none;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
        }
       .download-sub-flex {
-       display: none;
-      flex-direction: none;
-      width: none;
+       display: flex;
+      flex-direction: column;
+      width: 100%;
       }
 
       #blog div img {
-        width: none;
-        height:none;;
+        width: 97%;
+        height:90%;
         }
       
         #blog p {
-        width:none  
+        width:97% 
         }
-      
+
+      #blog {
+      width: 100%  
+      }
         .blog-flex {
-          display: none;
-          flex-direction:none ;
-          justify-content: none;
-          
+          display: flex;
+          flex-direction:column ;
+          justify-content: center;
+          width: 100%;
         }
       
         .blog-sub-flex1 {
-        display: none;
-        flex-direction: none;
-        width: none;
-        margin: none;
+        display: flex;
+        flex-direction: column;
+        width: 97%;
+        margin: 10px;
         justify-content:none;
         }
       
@@ -384,10 +406,14 @@ text-align: center;
       
         .blog-sub-flex-row {
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
           width:100%;
           margin: 10px;
           justify-content:;
+          }
+
+          #footer{
+            width: 100%;
           }
 
 }
