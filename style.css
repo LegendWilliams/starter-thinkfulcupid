@@ -75,11 +75,12 @@ header {
   background-color: #83092e;
   padding: 20px 20px 0 20px;
   width: 100%;
+  display: flex;
+  justify-content: space-between
 }
 
 nav {
-float: right;  
-position: relative;
+;
 }
 
 .logo {
@@ -246,7 +247,7 @@ footer p {
 
 
 /* -------  Media Query ------- */
-@media all and (max-width: 600px) {
+@media all and (max-width: 480px) {
   body {
     background-color: white;
   }
@@ -274,7 +275,9 @@ footer p {
 
 header {
 text-align: center;
-width: 100%;  
+width: 100%; 
+display: flex;
+flex-direction: column; 
 }
 
   header nav ul {
