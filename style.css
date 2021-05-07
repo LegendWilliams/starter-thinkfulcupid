@@ -138,6 +138,7 @@ form button {
   padding: 15px;
   width: 100%;
 }
+/* End of form */
 
 .about-flex{
   display: flex;
@@ -194,26 +195,38 @@ footer p {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
 
   .about-flex p {
-    font-size: 1.25vh
+    font-size: 10px;
+    width: 50%;
   }
 
   #about img {
-    width: 30%;
+    width: 25%;
     margin-right: 10px;
   }
 
-  .download-sub-flex{
+  .download-flex {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
 
+  .download-sub-flex {
+  display: flex;
+  flex-direction: column;
+  width:50%;
+  }
+
   #download img {
     width: 50%;
     margin-left: 25px;
+  }
+
+  #download p {
+   width:; 
   }
 
   .blog-flex{
