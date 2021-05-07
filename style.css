@@ -12,21 +12,9 @@ h2 {
   text-align: center;
 }
 
-.redheader{
-  font-size: 30px; 
-  color: #83092e;
-  margin-top:0;
-  }
-
 h3 {
   font-size: 18px;
   font-weight: 500;
-}
-
-h4 {
-  font-size: 20px; 
-  color: #83092e; 
-  text-align: center;
 }
 
 p {
@@ -36,7 +24,6 @@ p {
 
 section {
   padding: 20px;
-  width: 100%;
 }
 
 section.alternate-background {
@@ -44,20 +31,16 @@ section.alternate-background {
   color: #ecdbc9;
 }
 
-.header-image {
-width:60%;
-height:90%;  
+main img {
+  width: 100%;
+  margin: 25px 0px 25px 0px;
 }
 
 /* ---  Groups & Items --- */
 
 .group {
-  display: inline-flex;
-  flex-direction: row;
-  width: 250px;
-  position: relative;
-  
-  
+  display: flex;
+  flex-direction: column;
 }
 
 .item {
@@ -74,26 +57,17 @@ height:90%;
 header {
   background-color: #83092e;
   padding: 20px 20px 0 20px;
-  width: 100%;
+  text-align: center;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-}
-
-nav {
-
 }
 
 .logo {
   font-family: "Tangerine", cursive;
-  font-size: 30px;
+  font-size: 72px;
   color: #ecdbc9;
-  text-align: left;
-  display: inline-block;
-  position: relative; 
 }
-
-
 
 header nav ul li {
   list-style-type: none;
@@ -110,107 +84,36 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
-.column-flex {
+#menu{
   display: flex;
-  flex-direction: row;
-  width: auto;
-  justify-content: space-between;
-  }
-  
-  .sub-flex {
+
+}
+
+#join{
   display: flex;
-  flex-direction: column;  
-  width: 45%;
-  }
-
-  #about img {
-  width: 25%;
-  height: auto;
-  margin: 10px;
-  }
-
-  #about p {
-  font-size: 15px;
-  width:50%; 
-  margin: 10;
-  
-  }
-  .about-flex {
-  display: flex; 
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  width:;
-  }
+}
 
- #download img {
- width: 40%;
- height: 80;  
- }
-  .download-flex {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   width: 100%;
-  }
- .download-sub-flex {
-  display: flex;
- flex-direction: column;
- width: 59%;
- }
+.header-image{
+  width: 100%
+}
 
- #blog div img {
-  width: 100%;
-  height:100%;;
-  }
+.red-header{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 200;
+}
 
-  #blog p {
-  width:100%  
-  }
-
-  .blog-flex {
-    display: flex;
-    flex-direction:column ;
-    justify-content: space-between;
-    
-  }
-
-  .blog-sub-flex1 {
-  display: flex;
-  flex-direction: column;;
-  width: 50%;
-  margin: 10px;
-  justify-content:space-between;
-  }
-
-
-
-  .blog-sub-flex-row {
-    display: flex;
-    flex-direction: row;
-    width:100%;
-    margin: 10px;
-    justify-content:;
-    }
 /* -------  Join Form ------- */
 form {
   border: 2px solid #6b1a22;
   padding: 10px;
   display: flex;
-  flex-direction:column;
-  margin:auto;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
-
-form div{
-display: flex;
-flex-direction:row;
-justify-content: space-between; 
-}
-
-form input {
-position: relative;
-right: 0px;
-}
-
 
 form label {
   font-weight: bold;
@@ -220,9 +123,11 @@ form select,
 form input {
   margin-bottom: 20px;
   width: 180px;
-  position: relative;
-  left: 1px;
-  border: 
+}
+
+.form-item{
+  display: flex;
+  justify-content: space-between;
 }
 
 form button {
@@ -234,10 +139,16 @@ form button {
   width: 100%;
 }
 
+.about-flex{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 /* -------  Footer ------- */
 
-#footer {
-  width: %;
+footer {
   background-color: #83092e;
 }
 
@@ -247,181 +158,71 @@ footer p {
   padding: 20px;
 }
 
-
-
-
-
 /* -------  Media Query ------- */
-@media all and (max-width: 480px) {
-  body {
-    background-color: white;
+@media all and (min-width: 480px) {
+
+  .logo{
+    font-size: 6vw;
   }
 
-  .logo {
-    font-family: "Tangerine", cursive;
-    font-size: 72px;
-    color: #ecdbc9;
-    text-align: center;
-    
-    }
+  header{
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-  .group {
+  #join{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #join img{
+    width: 45%;
+  }
+
+  .subflex{
+    width: 45%;
+  }
+
+  form {
+    margin: 10px;
+    font-size: 1.25vw;
+  }
+
+
+
+  .about-flex{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
   }
 
- main img, .header-image {
-   width: 45%;
-   height: 90%;
-   margin-bottom:10px;
-  
- }
-
-header {
-text-align: center;
-width: 100%; 
-display: flex;
-flex-direction: column; 
-}
-
-  header nav ul {
-  font-size: 25px;
-  }
-
-  nav {
-    float: none; 
-    display: flex;
-    justify-content: center; 
-    }
-
-  .redheader{
-  font-size: 30px; 
-  color: #83092e; 
-  }
-  
-  .alternative-background{
-   background-color: white; 
-  }
-
-  .column-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  }
-
-  .column-flex img {
-   width:100%;
-   height:90%;
-  }
-  
-  form {
-    width: 90%;
-    border: 2px solid #6b1a22;
-    padding: 10px;
-    display: flex;
-    flex-direction:column;
-    margin:auto;
-  }
-  
-  form div{
-  display: flex;
-  flex-direction:row;
-  justify-content: space-between; 
-  }
-  
-  form input {
-  position: relative;
-  right: 0px;
-  }
-
-  h4 {
-    font-size: 35px; 
-    color: #83092e; 
-    text-align: center;
-  }
-  
-  #about {
-  width: 100%; 
-
+  .about-flex p {
+    font-size: 1.25vh
   }
 
   #about img {
-    width:97%;
-    height:90%;
-    margin: none;
-    }
-  
-    #about p {
-    font-size: none;
-    margin: auto;
-    width:97%;
-    height:90%;
-    text-align: left;
+    width: 30%;
+    margin-right: 10px;
+  }
+
+  .download-sub-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #download img {
+    width: 50%;
+    margin-left: 25px;
+  }
+
+  .blog-flex{
+    display: flex;
+  }
+
+  .blog-sub-flex-row{
+    margin: 25px;
     
-    }
-    .about-flex {
-    display: flex;; 
-    flex-direction: column;
-    justify-content: center;
-    
-    }
-  
-    #download img {
-      width: 97%;
-      height: 90%;  
-      }
-       .download-flex {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-       }
-      .download-sub-flex {
-       display: flex;
-      flex-direction: column;
-      width: 100%;
-      }
-
-      #blog div img {
-        width: 97%;
-        height:90%;
-        }
-      
-        #blog p {
-        width:97% 
-        }
-
-      #blog {
-      width: 100%  
-      }
-        .blog-flex {
-          display: flex;
-          flex-direction:column ;
-          justify-content: center;
-          width: 100%;
-        }
-      
-        .blog-sub-flex1 {
-        display: flex;
-        flex-direction: column;
-        width: 97%;
-        margin: 10px;
-        justify-content:none;
-        }
-      
-      
-      
-        .blog-sub-flex-row {
-          display: flex;
-          flex-direction: column;
-          width:100%;
-          margin: 10px;
-          justify-content:;
-          }
-
-          #footer{
-            width: 100%;
-          }
+  }
 
 }
