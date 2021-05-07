@@ -76,11 +76,12 @@ header {
   padding: 20px 20px 0 20px;
   width: 100%;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav {
-;
+
 }
 
 .logo {
@@ -112,18 +113,18 @@ header nav ul li a:hover {
 .column-flex {
   display: flex;
   flex-direction: row;
-  width: 98%;
+  width: auto;
   justify-content: space-between;
   }
   
   .sub-flex {
   display: flex;
   flex-direction: column;  
-  width: auto;
+  width: 45%;
   }
 
   #about img {
-  width: 20%;
+  width: 25%;
   height: auto;
   margin: 10px;
   }
@@ -131,11 +132,14 @@ header nav ul li a:hover {
   #about p {
   font-size: 15px;
   width:50%; 
-  margin: 10 
+  margin: 10;
+  
   }
   .about-flex {
   display: flex; 
   flex-direction: row;
+  align-items: center;
+  width:;
   }
 
  #download img {
@@ -146,6 +150,7 @@ header nav ul li a:hover {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+   width: 100%;
   }
  .download-sub-flex {
   display: flex;
@@ -232,7 +237,7 @@ form button {
 /* -------  Footer ------- */
 
 #footer {
-  width: 100%;
+  width: %;
   background-color: #83092e;
 }
 
@@ -267,7 +272,7 @@ footer p {
   }
 
  main img, .header-image {
-   width: 100%;
+   width: 45%;
    height: 90%;
    margin-bottom:10px;
   
