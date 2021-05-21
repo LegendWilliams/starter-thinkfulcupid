@@ -108,3 +108,7 @@ Within the media query, write CSS to create the following designs for desktop:
 ![Download desktop](./images/download-desktop.png)
 
 - The blog posts in the "Blog" section should be displayed in a 2 by 2 grid (see the desktop design shared above)
+
+
+#Tech Stack
+This application was built using Html5 and Bootstrap
